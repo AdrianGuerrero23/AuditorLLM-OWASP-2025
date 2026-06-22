@@ -26,12 +26,11 @@ Utilizando el marco internacional OWASP Top 10 para Aplicaciones LLM (2025) y la
 La aplicación está diseñada para ejecutarse en la nube a través de un cuaderno interactivo, eliminando la gestión de dependencias locales.
 
 1.  Haga clic en el siguiente botón para abrir el entorno en la nube:
-    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AdrianGuerrero23/AuditorLLM-OWASP-2025/blob/main/AppAuditorias.ipynb)
-    *(Sustituya la URL superior por el enlace directo a su archivo AppAuditorias.ipynb en GitHub).*
+    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AdrianGuerrero23/AuditorLLM-OWASP-2025/blob/main/AppAuditorias.ipynb).*
 2.  En el menú lateral izquierdo de Colab, acceda a "Secretos" (icono de llave).
-3.  Añada las siguientes variables y habilite el "Acceso al cuaderno":
-    * Nombre: `GEMINI_API_KEY` | Valor: Su clave de Google AI Studio.
-    * Nombre: `GROQ_CLOUD_API` | Valor: Su clave de Groq.
+3.  Añada las siguientes variables y habilite el "Acceso al cuaderno" (el interruptor junto a cada clave):
+    * Nombre: `GEMINI_API_KEY` | Valor: Su clave gratuita obtenida en [Google AI Studio](https://aistudio.google.com/app/apikey).
+    * Nombre: `GROQ_CLOUD_API` | Valor: Su clave gratuita obtenida en [Groq Console](https://console.groq.com/keys).
 4.  En el menú superior, seleccione "Entorno de ejecución" > "Ejecutar todo".
 5.  Al finalizar, haga clic en el enlace público generado (ej. `https://xxxx-xxxx.gradio.live`) en la última celda.
 
