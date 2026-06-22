@@ -26,7 +26,7 @@ Utilizando el marco internacional OWASP Top 10 para Aplicaciones LLM (2025) y la
 La aplicación está diseñada para ejecutarse en la nube a través de un cuaderno interactivo, eliminando la gestión de dependencias locales.
 
 1.  Haga clic en el siguiente botón para abrir el entorno en la nube:
-    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/TU_REPOSITORIO/blob/main/AppAuditorias.ipynb)
+    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AdrianGuerrero23/AuditorLLM-OWASP-2025/blob/main/AppAuditorias.ipynb)
     *(Sustituya la URL superior por el enlace directo a su archivo AppAuditorias.ipynb en GitHub).*
 2.  En el menú lateral izquierdo de Colab, acceda a "Secretos" (icono de llave).
 3.  Añada las siguientes variables y habilite el "Acceso al cuaderno":
