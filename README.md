@@ -42,17 +42,26 @@ Para ejecutar el proyecto de forma local en su máquina, utilice una consola de 
 
 1.  Clonar el repositorio:
     ```bash
-    git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
-    cd TU_REPOSITORIO
-    ```
-2.  Crear un entorno virtual e instalar dependencias:
-    ```bash
+    git clone [https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git](https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git)
+    cd AuditorLLM-OWASP-2025
     python -m venv venv
     source venv/bin/activate  # En Windows: venv\Scripts\activate
-    pip install gradio plotly google-genai groq weasyprint
+    pip install -r requirements.txt jupyter
     ```
-3.  Exportar las variables de entorno (`GEMINI_API_KEY`, `GROQ_CLOUD_API`) en su terminal.
-4.  Exportar las celdas del cuaderno como scripts `.py` (o ejecutar el cuaderno en Jupyter) y lanzar `main.py`.
+2.  Configurar Variables de Entorno (API Keys):
+    ```bash
+    # En Linux/Mac:
+    export GEMINI_API_KEY="tu_clave_google_aqui"
+    export GROQ_CLOUD_API="tu_clave_groq_aqui"
+
+    # En Windows (PowerShell):
+    $env:GEMINI_API_KEY="tu_clave_google_aqui"
+    $env:GROQ_CLOUD_API="tu_clave_groq_aqui"
+    ```
+3.  Compilar y Ejecutar la Plataforma:
+    ```bash
+    jupyter notebook AppAuditorias.ipynb
+    ```
 
 ---
 
