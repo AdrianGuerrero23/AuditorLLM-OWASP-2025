@@ -1,0 +1,20 @@
+# Entornos virtuales
+venv/
+env/
+.env
+
+# Archivos cacheados de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos generados por la plataforma
+*.pdf
+informe_*.pdf
+
+# Archivos de Colab y Jupyter
+.ipynb_checkpoints/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
