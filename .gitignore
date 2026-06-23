@@ -1,7 +1,10 @@
 # Entornos virtuales
 venv/
 env/
-.env
+
+# Credenciales y variables de entorno
+*.env
+credenciales.env
 
 # Archivos cacheados de Python
 __pycache__/
