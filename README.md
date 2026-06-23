@@ -98,6 +98,7 @@ La plataforma estará accesible inmediatamente en su navegador a través de http
     jupyter notebook AppAuditorias.ipynb
     ```
 Una vez abierto en el navegador, haga clic en "Run > Run All Cells" y acceda al enlace local (ej. http://127.0.0.1:7860) que aparecerá al final del documento.
+
 ---
 
 ## Guía Rápida de Uso
