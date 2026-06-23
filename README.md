@@ -40,25 +40,33 @@ La aplicación está diseñada para ejecutarse en la nube a través de un cuader
 
 Para ejecutar el proyecto de forma local en su máquina, utilice una consola de comandos o terminal:
 
+**Requisitos previos:** Asegúrate de tener instalados [Python](https://www.python.org/downloads/) y [Git](https://git-scm.com/downloads) en tu equipo.
+
 1.  Clonar el repositorio:
     ```bash
     git clone [https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git](https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git)
     cd AuditorLLM-OWASP-2025
+    ```
+2.  Crear un Entorno Virtual:
+    ```bash
     python -m venv venv
-    source venv/bin/activate  # En Windows: venv\Scripts\activate
+    venv\Scripts\activate        #En Mac o Linux source venv/bin/activate
+    ```
+3.  Instalar las dependencias:
+    ```bash
     pip install -r requirements.txt jupyter
     ```
-2.  Configurar Variables de Entorno (API Keys):
+4.  Configurar tus Claves de IA (API Keys):
     ```bash
-    # En Linux/Mac:
-    export GEMINI_API_KEY="tu_clave_google_aqui"
-    export GROQ_CLOUD_API="tu_clave_groq_aqui"
-
     # En Windows (PowerShell):
     $env:GEMINI_API_KEY="tu_clave_google_aqui"
     $env:GROQ_CLOUD_API="tu_clave_groq_aqui"
+    
+    # En Linux/Mac:
+    export GEMINI_API_KEY="tu_clave_google_aqui"
+    export GROQ_CLOUD_API="tu_clave_groq_aqui"
     ```
-3.  Compilar y Ejecutar la Plataforma:
+5.  Compilar y Ejecutar la Plataforma:
     ```bash
     jupyter notebook AppAuditorias.ipynb
     ```
@@ -75,7 +83,7 @@ Para ejecutar el proyecto de forma local en su máquina, utilice una consola de 
 
 ## Formato para Datasets Personalizados (Custom)
 
-Si desea utilizar baterías de prueba propias de su organización, puede subir un archivo `.json` en la interfaz. El archivo debe cumplir con la siguiente estructura requerida:
+Si desea utilizar datasets de prueba, puede subir un archivo `.json` en la interfaz. El archivo debe cumplir con la siguiente estructura requerida:
 
 ```json
 [
