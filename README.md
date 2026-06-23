@@ -78,24 +78,18 @@ La plataforma estará accesible inmediatamente en su navegador a través de http
     git clone https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git
     cd AuditorLLM-OWASP-2025
     ```
-2.  Crear un Entorno Virtual:
+2.  Configurar las credenciales (API Keys):
+    - Localice y abra el archivo credenciales.env incluido en la carpeta principal del proyecto (puede usar el Bloc de notas o cualquier editor de texto).
+    - Reemplace los textos de ejemplo por sus claves reales, manteniendo el formato exacto (sin comillas y sin espacios pegado al signo igual).
+    - Guarde y cierre el archivo.
+3.  Crear un Entorno Virtual:
     ```bash
     python -m venv venv
     venv\Scripts\activate        #En Mac o Linux source venv/bin/activate
     ```
-3.  Instalar las dependencias:
+4.  Instalar las dependencias:
     ```bash
     pip install -r requirements.txt jupyter
-    ```
-4.  Configurar tus Claves de IA (API Keys):
-    ```bash
-    # En Windows (PowerShell):
-    $env:GEMINI_API_KEY="tu_clave_google_aqui"
-    $env:GROQ_CLOUD_API="tu_clave_groq_aqui"
-    
-    # En Linux/Mac:
-    export GEMINI_API_KEY="tu_clave_google_aqui"
-    export GROQ_CLOUD_API="tu_clave_groq_aqui"
     ```
 5.  Compilar y Ejecutar la Plataforma:
     ```bash
