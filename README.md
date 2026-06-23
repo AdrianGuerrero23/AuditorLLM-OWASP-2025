@@ -51,8 +51,11 @@ Este método aísla completamente la aplicación y el motor de generación de PD
 1.  Clonar el repositorio:
     ```bash
     git clone https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git
+    ```
+    ```bash
     cd AuditorLLM-OWASP-2025
     ```
+    
 2.  Configurar las credenciales (API Keys):
     - Localice y abra el archivo credenciales.env incluido en la carpeta principal del proyecto (puede usar el Bloc de notas o cualquier editor de texto).
     - Reemplace los textos de ejemplo por sus claves reales, manteniendo el formato exacto (sin comillas y sin espacios pegado al signo igual).
@@ -76,6 +79,8 @@ La plataforma estará accesible inmediatamente en su navegador a través de http
 1.  Clonar el repositorio:
     ```bash
     git clone https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git
+    ```
+    ```bash
     cd AuditorLLM-OWASP-2025
     ```
 2.  Configurar las credenciales (API Keys):
@@ -85,6 +90,8 @@ La plataforma estará accesible inmediatamente en su navegador a través de http
 3.  Crear un Entorno Virtual:
     ```bash
     python -m venv venv
+    ```
+    ```bash
     venv\Scripts\activate        #En Mac o Linux source venv/bin/activate
     ```
 4.  Instalar las dependencias:
