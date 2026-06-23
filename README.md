@@ -44,7 +44,7 @@ Para ejecutar el proyecto de forma local en su máquina, utilice una consola de 
 
 1.  Clonar el repositorio:
     ```bash
-    git clone [https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git](https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git)
+    git clone https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git
     cd AuditorLLM-OWASP-2025
     ```
 2.  Crear un Entorno Virtual:
