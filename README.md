@@ -53,13 +53,17 @@ Este método aísla completamente la aplicación y el motor de generación de PD
     git clone https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git
     cd AuditorLLM-OWASP-2025
     ```
-2.  Construir la imagen del contenedor:
+2.  Configurar las credenciales (API Keys):
+    - Localice y abra el archivo credenciales.env incluido en la carpeta principal del proyecto (puede usar el Bloc de notas o cualquier editor de texto).
+    - Reemplace los textos de ejemplo por sus claves reales, manteniendo el formato exacto (sin comillas y sin espacios pegado al signo igual).
+    - Guarde y cierre el archivo.
+4.  Construir la imagen del contenedor:
     ```bash
     docker build -t auditor-llm .
     ```
-3.  Ejecutar el contenedor inyectando sus credenciales (sustituya los valores entre comillas):
+5.  Ejecutar el contenedor inyectando el archivo de credenciales:
     ```bash
-    docker run -p 7860:7860 -e GEMINI_API_KEY="tu_clave_google_aqui" -e GROQ_CLOUD_API="tu_clave_groq_aqui" auditor-llm
+    docker run -p 7860:7860 --env-file credenciales.env auditor-llm
     ```
 La plataforma estará accesible inmediatamente en su navegador a través de http://127.0.0.1:7860.
 
