@@ -38,9 +38,35 @@ La aplicación está diseñada para ejecutarse en la nube a través de un cuader
 
 ## Despliegue Local (Avanzado)
 
-Para ejecutar el proyecto de forma local en su máquina, utilice una consola de comandos o terminal:
+Para ejecutar el proyecto de forma local en su infraestructura, puede optar por dos vías: utilizando contenedores Docker (recomendado para evitar problemas de dependencias del sistema) o mediante una instalación directa con Python:
 
-**Requisitos previos:** Asegúrate de tener instalados [Python](https://www.python.org/downloads/) y [Git](https://git-scm.com/downloads) en tu equipo.
+**Requisitos previos:** Asegúrate de tener instalado [Git](https://git-scm.com/downloads) en tu equipo.
+
+### Opción A: Despliegue mediante Docker (Recomendado)
+
+Este método aísla completamente la aplicación y el motor de generación de PDF, garantizando compatibilidad nativa en Windows, Mac y Linux sin instalaciones adicionales en el sistema operativo anfitrión.
+
+**Requisitos previos:** Asegúrese de tener instalado [Docker](https://www.docker.com/products/docker-desktop/) en su equipo.
+
+1.  Clonar el repositorio:
+    ```bash
+    git clone https://github.com/AdrianGuerrero23/AuditorLLM-OWASP-2025.git
+    cd AuditorLLM-OWASP-2025
+    ```
+2.  Construir la imagen del contenedor:
+    ```bash
+    docker build -t auditor-llm .
+    ```
+3.  Ejecutar el contenedor inyectando sus credenciales (sustituya los valores entre comillas):
+    ```bash
+    docker run -p 7860:7860 -e GEMINI_API_KEY="tu_clave_google_aqui" -e GROQ_CLOUD_API="tu_clave_groq_aqui" auditor-llm
+    ```
+La plataforma estará accesible inmediatamente en su navegador a través de http://127.0.0.1:7860.
+
+### Opción B: Despliegue mediante Python (Entorno Virtual)
+
+**Requisitos previos:** Asegúrate de tener instalado [Python](https://www.python.org/downloads/).
+**Nota para usuarios de Windows:** Para que el motor de exportación a PDF (`WeasyPrint`) funcione correctamente, es requisito indispensable instalar previamente el motor gráfico [GTK3 Runtime para Windows](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases/latest). Durante la instalación, asegúrese de marcar la casilla *"Set up PATH environment variable to include GTK+"*.
 
 1.  Clonar el repositorio:
     ```bash
@@ -70,7 +96,7 @@ Para ejecutar el proyecto de forma local en su máquina, utilice una consola de 
     ```bash
     jupyter notebook AppAuditorias.ipynb
     ```
-
+Una vez abierto en el navegador, haga clic en "Run > Run All Cells" y acceda al enlace local (ej. http://127.0.0.1:7860) que aparecerá al final del documento.
 ---
 
 ## Guía Rápida de Uso
