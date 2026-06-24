@@ -8,3 +8,4 @@ weasyprint>=60.0
 requests>=2.30.0
 pytz
 python-dotenv>=1.0.0
+pip-system-certs>=4.0
