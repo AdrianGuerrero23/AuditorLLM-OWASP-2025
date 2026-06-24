@@ -72,6 +72,7 @@ Este método aísla completamente la aplicación y el motor de generación de PD
     ```
 La plataforma estará accesible inmediatamente en su navegador a través de http://127.0.0.1:7860.
 
+
 ### Opción B: Despliegue mediante Python (Entorno Virtual)
 
 >    [!WARNING]
