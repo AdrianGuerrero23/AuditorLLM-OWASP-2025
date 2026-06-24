@@ -40,7 +40,7 @@ La aplicación está diseñada para ejecutarse en la nube a través de un cuader
 
 Para ejecutar el proyecto de forma local en su infraestructura, puede optar por dos vías: utilizando contenedores Docker (recomendado para evitar problemas de dependencias del sistema) o mediante una instalación directa con Python:
 
->    [!IMPORTANT]
+>    [!WARNING]
 >    **Requisitos previos:** Asegúrate de tener instalado [Git](https://git-scm.com/downloads) en tu equipo.
 
 ### Opción A: Despliegue mediante Docker (Recomendado)
@@ -74,7 +74,8 @@ La plataforma estará accesible inmediatamente en su navegador a través de http
 
 ### Opción B: Despliegue mediante Python (Entorno Virtual)
 
-**Requisitos previos:** Asegúrate de tener instalado [Python](https://www.python.org/downloads/).
+>    [!WARNING]
+>    **Requisitos previos:** Asegúrate de tener instalado [Python](https://www.python.org/downloads/).
 
 >    **Nota para usuarios de Windows:** Para que el motor de exportación a PDF (`WeasyPrint`) funcione correctamente, es requisito indispensable instalar previamente el motor gráfico [GTK3 Runtime para Windows](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases/latest). Durante la instalación, asegúrese de marcar la casilla *"Set up PATH environment variable to include GTK+"*.
 
