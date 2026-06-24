@@ -95,12 +95,13 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
     ```bash
     venv\Scripts\activate        #En Mac o Linux source venv/bin/activate
     ```
-    **Nota para usuarios de Windows:** Si al intentar activar el entorno virtual (`venv\Scripts\activate`) te aparece un error rojo indicando que **"la ejecución de scripts está deshabilitada en este sistema"**, se debe a la protección por defecto de Windows.
-
-    Para solucionarlo, ejecuta este comando en tu consola para dar permiso temporal a la sesión actual:
-    ```bash
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-    ```
+    > **Nota para usuarios de Windows:** Si al intentar activar el entorno virtual (`venv\Scripts\activate`) te aparece un error rojo indicando que "la ejecución de scripts está deshabilitada en este sistema", se debe a la protección por defecto de Windows.
+    >
+    > Para solucionarlo, ejecuta este comando en tu consola para dar permiso temporal a la sesión actual:
+    >
+    > ```powershell
+    > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+    > ```
 4.  Instalar las dependencias:
     ```bash
     pip install -r requirements.txt jupyter
