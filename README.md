@@ -75,6 +75,7 @@ La plataforma estará accesible inmediatamente en su navegador a través de http
 **Requisitos previos:** Asegúrate de tener instalado [Python](https://www.python.org/downloads/).
 
 **Nota para usuarios de Windows:** Para que el motor de exportación a PDF (`WeasyPrint`) funcione correctamente, es requisito indispensable instalar previamente el motor gráfico [GTK3 Runtime para Windows](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases/latest). Durante la instalación, asegúrese de marcar la casilla *"Set up PATH environment variable to include GTK+"*.
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 1.  Clonar el repositorio:
     ```bash
@@ -93,6 +94,12 @@ La plataforma estará accesible inmediatamente en su navegador a través de http
     ```
     ```bash
     venv\Scripts\activate        #En Mac o Linux source venv/bin/activate
+    ```
+    **Nota para usuarios de Windows:** Si al intentar activar el entorno virtual (`venv\Scripts\activate`) te aparece un error rojo indicando que **"la ejecución de scripts está deshabilitada en este sistema"**, se debe a la protección por defecto de Windows.
+
+    Para solucionarlo, ejecuta este comando en tu consola para dar permiso temporal a la sesión actual:
+    ```bash
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
     ```
 4.  Instalar las dependencias:
     ```bash
