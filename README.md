@@ -40,13 +40,15 @@ La aplicación está diseñada para ejecutarse en la nube a través de un cuader
 
 Para ejecutar el proyecto de forma local en su infraestructura, puede optar por dos vías: utilizando contenedores Docker (recomendado para evitar problemas de dependencias del sistema) o mediante una instalación directa con Python:
 
-**Requisitos previos:** Asegúrate de tener instalado [Git](https://git-scm.com/downloads) en tu equipo.
+>    [!IMPORTANT]
+>    **Requisitos previos:** Asegúrate de tener instalado [Git](https://git-scm.com/downloads) en tu equipo.
 
 ### Opción A: Despliegue mediante Docker (Recomendado)
 
 Este método aísla completamente la aplicación y el motor de generación de PDF, garantizando compatibilidad nativa en Windows, Mac y Linux sin instalaciones adicionales en el sistema operativo anfitrión.
 
-**Requisitos previos:** Asegúrese de tener instalado [Docker](https://www.docker.com/products/docker-desktop/) en su equipo.
+>    [!WARNING]
+>    **Requisitos previos:** Asegúrese de tener instalado [Docker](https://www.docker.com/products/docker-desktop/) en su equipo.
 
 1.  Clonar el repositorio:
     ```bash
